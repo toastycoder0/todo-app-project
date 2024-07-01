@@ -1,0 +1,32 @@
+[
+  {
+    "id": 1,
+    "name": "Complete online JavaScript course",
+    "checked": true
+  },
+  {
+    "id": 2,
+    "name": "Jog around the park 3x",
+    "checked": false
+  },
+  {
+    "id": 3,
+    "name": "10 minutes meditation",
+    "checked": false
+  },
+  {
+    "id": 4,
+    "name": "Read for 1 hour",
+    "checked": false
+  },
+  {
+    "id": 5,
+    "name": "Pick up groceries",
+    "checked": false
+  },
+  {
+    "id": 6,
+    "name": "Complete Todo App on Frontend Mentor",
+    "checked": false
+  }
+]
