@@ -1,5 +1,5 @@
 <div align="center">
-  <h1>🤖 Frontend Mentor - Todo app</h1>
+  <h1>🤖 Todo app</h1>
 
 A simple todo app project created with react and TypeScript
 
