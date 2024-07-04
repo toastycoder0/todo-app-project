@@ -5,6 +5,8 @@ A simple todo app project created with react and TypeScript
 
 [You can view the page by clicking here](https://todo-app-project.pages.dev)
 
+[![Deploy pipeline](https://github.com/toastycoder0/todo-app-project/actions/workflows/deploy.yml/badge.svg)](https://github.com/toastycoder0/todo-app-project/actions/workflows/deploy.yml)
+
 ![Design preview for the Todo app coding challenge](./public/preview.webp)
 
 </div>
