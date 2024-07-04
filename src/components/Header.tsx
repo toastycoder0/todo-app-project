@@ -44,7 +44,7 @@ export const Header: FC<HeaderProps> = ({ onNewItem }) => {
         className='mt-10 flex items-center gap-3 py-[0.875rem] rounded-[0.313rem] text-xs px-5 bg-white dark:bg-black md:text-lg md:mt-12'
         onSubmit={submitItem}
       >
-        <span className='w-5 h-5 rounded-full border-[1px] border-light-border dark:border-dark-border' />{' '}
+        <span className='w-5 h-5 rounded-full border-[1px] border-light-border dark:border-dark-border md:w-6 md:h-6' />{' '}
         <input
           id='item-name'
           type='text'
