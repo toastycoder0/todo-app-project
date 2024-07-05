@@ -6,7 +6,7 @@ interface ThemeProviderProps {
 }
 
 export const ThemeProvider: FC<ThemeProviderProps> = ({ children }) => {
-  const [mounted, setMounted] = useState(false)
+  const [isMounted, setIsMounted] = useState(false)
 
   useEffect(() => {
     if (
@@ -19,10 +19,11 @@ export const ThemeProvider: FC<ThemeProviderProps> = ({ children }) => {
       document.documentElement.classList.remove(THEME_VALUES.dark)
       localStorage.theme = THEME_VALUES.light
     }
-    setMounted(true)
+
+    setIsMounted(true)
   }, [])
 
-  if (!mounted) return null
+  if (!isMounted) return null
 
   return <>{children}</>
 }
