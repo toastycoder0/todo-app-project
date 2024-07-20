@@ -3,6 +3,7 @@ import { ThemeProvider } from './components/ThemeProvider'
 import { Header } from './components/Header'
 import { ItemsList } from './components/ItemsList'
 import { ItemElement } from './components/ItemElement'
+import { Footer } from './components/Footer'
 import { getItemsStore } from './itemsStore'
 import { VIEWS, VIEWS_LIST } from './constants'
 
@@ -28,6 +29,7 @@ const App = () => {
             <ItemElement {...item} onDelete={onDeleteItem} onCheck={onCheckItem} />
           ))}
         </ItemsList>
+        <Footer />
       </div>
     </ThemeProvider>
   )
