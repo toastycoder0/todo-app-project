@@ -21,5 +21,5 @@ export default {
       'dark-border': '#393A4B'
     }
   },
-  plugins: []
+  plugins: [require('tailwind-scrollbar')]
 }
