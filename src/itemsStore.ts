@@ -12,6 +12,9 @@ export const itemsStore = create<ItemsStore>()(
           const items = get().items
           set({ items: [item, ...items] })
         },
+        onSetItems: (items: Item[]) => {
+          set({ items })
+        },
         onCheckItem: (id: string) => {
           const newItems = get().items.map((item) =>
             id === item.id ? { ...item, checked: !item.checked } : item

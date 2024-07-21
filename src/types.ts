@@ -7,6 +7,7 @@ export interface Item {
 export interface ItemsStore {
   items: Item[]
   onAddItem: (item: Item) => void
+  onSetItems: (item: Item[]) => void
   onCheckItem: (id: string) => void
   onDeleteItem: (id: string) => void
   onClearCompleteItems: () => void
