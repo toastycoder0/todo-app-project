@@ -1,5 +1,5 @@
 export interface Item {
-  id: number
+  id: string
   name: string
   checked: boolean
 }
@@ -7,7 +7,7 @@ export interface Item {
 export interface ItemsStore {
   items: Item[]
   onAddItem: (item: Item) => void
-  onCheckItem: (id: number) => void
-  onDeleteItem: (id: number) => void
+  onCheckItem: (id: string) => void
+  onDeleteItem: (id: string) => void
   onClearCompleteItems: () => void
 }

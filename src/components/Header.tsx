@@ -12,7 +12,7 @@ export const Header: FC<HeaderProps> = ({ onNewItem }) => {
     const input = document.querySelector('#item-name') as HTMLInputElement
     const name = input.value.trim()
     if (!name.length) return
-    const newItem = { id: +new Date(), name, checked: false }
+    const newItem = { id: `${+new Date()}`, name, checked: false }
     onNewItem(newItem)
     input.value = ''
   }

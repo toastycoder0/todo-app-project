@@ -12,13 +12,13 @@ export const itemsStore = create<ItemsStore>()(
           const items = get().items
           set({ items: [item, ...items] })
         },
-        onCheckItem: (id: number) => {
+        onCheckItem: (id: string) => {
           const newItems = get().items.map((item) =>
             id === item.id ? { ...item, checked: !item.checked } : item
           )
           set({ items: newItems })
         },
-        onDeleteItem: (id: number) => {
+        onDeleteItem: (id: string) => {
           const fiteredItems = get().items.filter((item) => item.id !== id)
           set({ items: fiteredItems })
         },
@@ -28,7 +28,7 @@ export const itemsStore = create<ItemsStore>()(
         }
       }),
       {
-        name: 'items-storage'
+        name: 'items'
       }
     )
   )
