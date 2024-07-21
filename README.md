@@ -1,7 +1,7 @@
 <div align="center">
-  <h1>🤖 Todo app</h1>
+  <h1>🤖 Frontend Mentor - Todo app</h1>
 
-A simple todo app project created with react and TypeScript
+This is a solution to the [todo app challenge on Frontend Mentor](https://www.frontendmentor.io/challenges/todo-app-Su1_KokOW).
 
 [You can view the page by clicking here](https://todo-app-project.pages.dev)
 
