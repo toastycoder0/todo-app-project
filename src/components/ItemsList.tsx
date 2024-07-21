@@ -11,12 +11,13 @@ interface ItemListProps {
 }
 
 export const ItemsList = forwardRef<HTMLUListElement, ItemListProps>(
-  ({ children, uncompleted = 0, selectedView, onSelectView, onClearItems }, ref) => {
+  ({ children, uncompleted = 0, selectedView, onSelectView, onClearItems, ...props }, ref) => {
     return (
       <div className='relative pb-16 md:pb-0'>
         <main className='mt-4 rounded-[0.313rem] overflow-hidden bg-white [box-shadow:_0px_35px_50px_-15px_rgba(194,195,214,0.5);] dark:bg-black dark:[box-shadow:_0px_35px_50px_-15px_rgba(0,0,0,1);]'>
           <ul
             ref={ref}
+            {...props}
             className='w-full h-[19.813rem] overflow-y-auto scrollbar-none md:h-[24.25rem]'
           >
             {children}

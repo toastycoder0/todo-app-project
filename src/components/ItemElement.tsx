@@ -3,16 +3,21 @@ import { forwardRef } from 'react'
 import clsx from 'clsx'
 
 interface ItemElementProps extends Item {
-  onDelete: (id: number) => void
-  onCheck: (id: number) => void
+  isDragging?: boolean
+  onDelete: (id: string) => void
+  onCheck: (id: string) => void
 }
 
 export const ItemElement = forwardRef<HTMLLIElement, ItemElementProps>(
-  ({ id, name, checked, onCheck, onDelete }, ref) => {
+  ({ id, name, checked, onCheck, onDelete, isDragging, ...props }, ref) => {
     return (
       <li
         ref={ref}
-        className='px-5 border-b-[1px] group flex items-center gap-3 py-4 border-light-border dark:border-dark-border md:py-5 md:gap-6 md:px-6'
+        {...props}
+        className={clsx(
+          'px-5 group flex items-center gap-3 py-4 bg-white border-light-border dark:border-dark-border dark:bg-black md:py-5 md:gap-6 md:px-6',
+          isDragging ? 'border-[1px] rounded-[0.313rem]' : 'border-b-[1px]'
+        )}
       >
         <button
           onClick={() => onCheck(id)}
