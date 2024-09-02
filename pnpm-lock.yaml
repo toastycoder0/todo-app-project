@@ -28,8 +28,8 @@ importers:
         version: 4.5.4(@types/react@18.3.3)(react@18.3.1)
     devDependencies:
       '@types/node':
-        specifier: ^22.0.2
-        version: 22.0.2
+        specifier: ^22.5.1
+        version: 22.5.1
       '@types/react':
         specifier: ^18.3.3
         version: 18.3.3
@@ -44,7 +44,7 @@ importers:
         version: 7.18.0(eslint@8.57.0)(typescript@5.5.3)
       '@vitejs/plugin-react':
         specifier: ^4.3.1
-        version: 4.3.1(vite@5.3.5(@types/node@22.0.2))
+        version: 4.3.1(vite@5.3.5(@types/node@22.5.1))
       autoprefixer:
         specifier: ^10.4.19
         version: 10.4.19(postcss@8.4.40)
@@ -74,7 +74,7 @@ importers:
         version: 5.5.3
       vite:
         specifier: ^5.3.5
-        version: 5.3.5(@types/node@22.0.2)
+        version: 5.3.5(@types/node@22.5.1)
 
 packages:
 
@@ -507,8 +507,8 @@ packages:
   '@types/json5@0.0.29':
     resolution: {integrity: sha512-dRLjCWHYg4oaA77cxO64oO+7JwCwnIzkZPdrrC71jQmQtlhM556pwKo5bUzqvZndkVbeFLIIi+9TC40JNF5hNQ==}
 
-  '@types/node@22.0.2':
-    resolution: {integrity: sha512-yPL6DyFwY5PiMVEwymNeqUTKsDczQBJ/5T7W/46RwLU/VH+AA8aT5TZkvBviLKLbbm0hlfftEkGrNzfRk/fofQ==}
+  '@types/node@22.5.1':
+    resolution: {integrity: sha512-KkHsxej0j9IW1KKOOAA/XBA0z08UFSrRQHErzEfA3Vgq57eXIMYboIlHJuYIfd+lwCQjtKqUu3UnmKbtUc9yRw==}
 
   '@types/prop-types@15.7.12':
     resolution: {integrity: sha512-5zvhXYtRNRluoE/jAp4GVsSduVUzNWKkOZrCDBWYtE7biZywwdC2AcEzg+cSMLFRfVgeAFqpfNabiPjxFddV1Q==}
@@ -1986,8 +1986,8 @@ packages:
   unbox-primitive@1.0.2:
     resolution: {integrity: sha512-61pPlCD9h51VoreyJ0BReideM3MDKMKnh6+V9L08331ipq6Q8OFXZYiqP6n/tbHx4s5I9uRhcye6BrbkizkBDw==}
 
-  undici-types@6.11.1:
-    resolution: {integrity: sha512-mIDEX2ek50x0OlRgxryxsenE5XaQD4on5U2inY7RApK3SOJpofyw7uW2AyfMKkhAxXIceo2DeWGVGwyvng1GNQ==}
+  undici-types@6.19.8:
+    resolution: {integrity: sha512-ve2KP6f/JnbPBFyobGHuerC9g1FYGn/F8n1LWTwNxCEzd6IfqTwUQcNXgEtmmQ6DlRrC1hrSrBnCZPokRrDHjw==}
 
   update-browserslist-db@1.0.16:
     resolution: {integrity: sha512-KVbTxlBYlckhF5wgfyZXTWnMn7MMZjMu9XG8bPlliUOP9ThaF4QnhP8qrjrH7DRzHfSk0oQv1wToW+iA5GajEQ==}
@@ -2511,9 +2511,9 @@ snapshots:
 
   '@types/json5@0.0.29': {}
 
-  '@types/node@22.0.2':
+  '@types/node@22.5.1':
     dependencies:
-      undici-types: 6.11.1
+      undici-types: 6.19.8
 
   '@types/prop-types@15.7.12': {}
 
@@ -2638,14 +2638,14 @@ snapshots:
 
   '@ungap/structured-clone@1.2.0': {}
 
-  '@vitejs/plugin-react@4.3.1(vite@5.3.5(@types/node@22.0.2))':
+  '@vitejs/plugin-react@4.3.1(vite@5.3.5(@types/node@22.5.1))':
     dependencies:
       '@babel/core': 7.24.7
       '@babel/plugin-transform-react-jsx-self': 7.24.7(@babel/core@7.24.7)
       '@babel/plugin-transform-react-jsx-source': 7.24.7(@babel/core@7.24.7)
       '@types/babel__core': 7.20.5
       react-refresh: 0.14.2
-      vite: 5.3.5(@types/node@22.0.2)
+      vite: 5.3.5(@types/node@22.5.1)
     transitivePeerDependencies:
       - supports-color
 
@@ -4234,7 +4234,7 @@ snapshots:
       has-symbols: 1.0.3
       which-boxed-primitive: 1.0.2
 
-  undici-types@6.11.1: {}
+  undici-types@6.19.8: {}
 
   update-browserslist-db@1.0.16(browserslist@4.23.1):
     dependencies:
@@ -4262,13 +4262,13 @@ snapshots:
 
   version-guard@1.1.2: {}
 
-  vite@5.3.5(@types/node@22.0.2):
+  vite@5.3.5(@types/node@22.5.1):
     dependencies:
       esbuild: 0.21.5
       postcss: 8.4.40
       rollup: 4.18.0
     optionalDependencies:
-      '@types/node': 22.0.2
+      '@types/node': 22.5.1
       fsevents: 2.3.3
 
   which-boxed-primitive@1.0.2:
